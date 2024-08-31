@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+a{
+    text-decoration: none;
+  }
+  .header{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(46, 4, 85, 0.747);
+    padding: 20px 10%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 100%;
+    
+  }
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 40px;
+    color: aliceblue;
+    
+
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 1s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+
+  .bg-light-purple {
+    background-color: #220549; /* Your light purple color */
+  }
+  .bg-light-purple-light {
+    background-color: #15054e; /* Lighter shade of light purple */
+  }
+
